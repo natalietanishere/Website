@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Tenali+Ramakrishna&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>My Artwork</title>
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <style>
+     body {
+      margin: 0;
+      font-family: Tenali Ramakrishna', sans-serif;
+    }
+
+    .topnav {
+      position: relative;
+      overflow: hidden;
+      background-color:#ccccff;
+    }
+
+    .topnav a {
+      float: left;
+      color:black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 50px;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .topnav a.active {
+      background-color:black;
+      color: white;
+    }
+
+    .topnav-centered a {
+      float: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .topnav-right {
+      float: right;
+    }
+
+    /* Responsive navigation menu (for mobile devices) */
+    @media screen and (max-width: 600px) {
+      .topnav a, .topnav-right {
+        float: none;
+        display: block;
+      }
+
+      .topnav-centered a {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+      }
+    }
+    <div.a{
+          text-align:center;
+          }
+  </style>
+  <body>
+    <!-- Top navigation -->
+    <div class="topnav">
+      <!-- Centered link -->
+      <div class="topnav-centered">
+        <a href="/index.html" class="active">Index</a>
+      </div>
+
+      <!-- Left-aligned links (default) -->
+       <a href="/blog.html">Blog</a>
+      <a href="/contact.html">Contact</a>
+
+      <!-- Right-aligned links -->
+      <div class="topnav-right">
+        <a href="/art.html">Art</a>
+        <a href="/about.html">About</a>
+      </div>
+    </div>
+
+    <div style="padding-left:16px">
+      <h2>
+        Artwork
+      </h2>
+      <p>
+        This is where I upload my artworks and music.
+      </p>
+       <p>
+              &nbsp;&nbsp;&nbsp;My music compositions are here:
+              <a
+                href="https://musescore.com/user/29600221"
+                target="_blank"
+                 >Music</a>
+      </p>
+      <h2>
+        Art Descriptions
+      </h2>
+    </div>
+     <div align="center" >
+      <ul>
+        <li>Chopin's Dreams:This is a painting that was made for a Chopin art competition.</li>
+        <li>Blooming:This is a portrait of my baby cousin in Malaysia during a family summer vacation.</li>
+        <li>Dragged into Darkness:This is a painting I submitted in an art class application.</li>
+        <li>Geometrically Perfect: I made this to practice geometric portraits and use my ballpoint pens.</li>
+        <li>Soaring in Acid: It's for a bird drawing competition and just completed it last month.</li>
+        <li>Happy 2020:This self-portrait was made on New Year's Day and made with Prismacolor markers.</li>
+      </ul>
+    </div>
+  </body>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+      position: relative;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+      cursor: pointer;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* Container for image text */
+    .caption-container {
+      text-align: center;
+      background-color: #222;
+      padding: 2px 16px;
+      color: white;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Six columns side by side */
+    .column {
+      float: left;
+      width: 16.66%;
+    }
+
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+      opacity: 0.6;
+    }
+
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img
+          src="https://cdn.glitch.com/3af8ece8-2e2f-40aa-a657-d85fa48f9380%2F93425156_562115491085887_4942035128107307646_n.jpg?v=1591041261857"
+          style="width:75%"
+        />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img
+          src="https://cdn.glitch.com/3af8ece8-2e2f-40aa-a657-d85fa48f9380%2F71027745_432195464313845_6250423060032529462_n.jpg?v=1591041370410"
+          style="width:75%"
+        />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img
+          src="https://cdn.glitch.com/3af8ece8-2e2f-40aa-a657-d85fa48f9380%2F91500511_221479192405912_955746792869605469_n.jpg?v=1591130467326"
+          style="width:75%"
+        />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img
+          src="https://cdn.glitch.com/3af8ece8-2e2f-40aa-a657-d85fa48f9380%2F101424779_610163356261466_2471321138429817524_n.jpg?v=1591133275679"
+          style="width:75%"
+        />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img
+          src="https://cdn.glitch.com/3af8ece8-2e2f-40aa-a657-d85fa48f9380%2F101789163_299350291077704_1422820713425273390_n.jpg?v=1591132987847"
+          style="width:75%"
+        />
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img
+          src="https://cdn.glitch.com/3af8ece8-2e2f-40aa-a657-d85fa48f9380%2F76843074_500590773921933_7154645716565335732_n.jpg?v=1591041359078"
+          style="width:75%"
+        />
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://cdn.glitch.com/3af8ece8-2e2f-40aa-a657-d85fa48f9380%2F93425156_562115491085887_4942035128107307646_n.jpg?v=1591041261857"
+            style="width:100%"
+            onclick="currentSlide(1)"
+            alt="Chopin's Dreams"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://cdn.glitch.com/3af8ece8-2e2f-40aa-a657-d85fa48f9380%2F71027745_432195464313845_6250423060032529462_n.jpg?v=1591041370410"
+            style="width:100%"
+            onclick="currentSlide(2)"
+            alt="Blooming"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://cdn.glitch.com/3af8ece8-2e2f-40aa-a657-d85fa48f9380%2F91500511_221479192405912_955746792869605469_n.jpg?v=1591130467326"
+            style="width:100%"
+            onclick="currentSlide(3)"
+            alt="Dragged into Darkness"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://cdn.glitch.com/3af8ece8-2e2f-40aa-a657-d85fa48f9380%2F101424779_610163356261466_2471321138429817524_n.jpg?v=1591188618321"
+            style="width:100%"
+            onclick="currentSlide(4)"
+            alt="Geometrically Perfect"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://cdn.glitch.com/3af8ece8-2e2f-40aa-a657-d85fa48f9380%2F101789163_299350291077704_1422820713425273390_n(1).jpg?v=1591135765444"
+            style="width:100%"
+            onclick="currentSlide(5)"
+            alt="Soaring in Acid"
+          />
+        </div>
+        <div class="column">
+          <img
+            class="demo cursor"
+            src="https://cdn.glitch.com/3af8ece8-2e2f-40aa-a657-d85fa48f9380%2F76843074_500590773921933_7154645716565335732_n.jpg?v=1591041359078"
+            style="width:100%"
+            onclick="currentSlide(6)"
+            alt="Happy 2020"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+      }
+    </script>
+  </body>
+</html>
+

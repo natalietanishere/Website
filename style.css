@@ -1,0 +1,130 @@
+/* CSS files add styling rules to your content */
+
+html{
+  height:1500px;
+}
+div{
+  text-align:center;
+}
+body {
+  margin:0;
+  color:#330066;
+  font-family:'Tenali Ramakrishna', sans-serif;;
+}
+
+table,th,td{
+  border:1px solid black:
+   border-collapse:collapse;
+   font-family:'Tenali Ramakrishna', sans-serif;;
+}
+th, td {
+  padding: 15px;
+}
+th{
+  font-size:100px;
+}
+td{
+  font-size:70px;
+}
+h1 {
+  text-align:center;
+  font-size:70px;
+}
+h2{
+  text-align:center;
+  font-size:100px;
+}
+h3{
+  font-size:50px;
+  text-align:center;
+}
+h4{
+  font-size:30px;
+  text-align:center;
+  
+}
+h5{
+  font-size:50px;
+  text-align:center;
+  border:5px solid #330066;
+  
+}
+p{
+  font-size:60px;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+li {
+  float: left;
+  font-size:50px;
+  text-align:center;
+}
+
+
+img{
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:100px:
+}
+
+input{
+  font-size:50px;
+  font-family:'Tenali Ramakrishna', sans-serif;;
+  text-align:center;
+}
+label{
+  font-size:50px;
+  font-family:'Tenali Ramakrishna', sans-serif;;
+  text-align:center;
+}
+* {
+  box-sizing: border-box;
+}
+
+.social-buttons a{
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 18px;
+  width: 60px;
+  height: 60px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 8px;
+}
+
+.social-buttons a::before{
+  content: "";
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg,#22a6b3,#30336b);
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover::before{
+  transform: scale(0);
+}
+
+.social-buttons a i{
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover i{
+  background: linear-gradient(45deg,#22a6b3,#30336b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(2.2);
+}
